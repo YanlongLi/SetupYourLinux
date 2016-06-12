@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+	<menu id="apps-editors-menu" label="Editors">
+		<item label="Emacs">
+			<action name="Execute">
+				<command>emacs</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Texmaker">
+			<action name="Execute">
+				<command>texmaker</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Atom">
+			<action name="Execute">
+				<command>atom</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Sublime Text">
+			<action name="Execute">
+				<command>subl</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-term-menu" label="Terminals">
+		<item label="xterm">
+			<action name="Execute">
+				<command>xterm</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="fqterm">
+			<action name="Execute">
+				<command>fqterm</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-development-menu" label="Development">
+		<item label="Eclipse">
+			<action name="Execute">
+				<command>eclipse</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+					<wmclass>eclipse</wmclass>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Virutalbox">
+			<action name="Execute">
+				<command>virtualbox</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+					<wmclass>virtualbox</wmclass>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-net-menu" label="Internet">
+		<item label="Firefox">
+			<action name="Execute">
+				<command>firefox</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+					<wmclass>Firefox</wmclass>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="ThunderBird">
+			<action name="Execute">
+				<command>thunderbird</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Chrome">
+			<action name="Execute">
+				<command>google-chrome-stable</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-office-menu" label="Office">
+		<item label="llpp">
+			<action name="Execute">
+				<command>llpp</command>
+			</action>
+		</item>
+		<item label="LibreOffice Calc">
+			<action name="Execute">
+				<command>soffice -calc</command>
+			</action>
+		</item>
+		<item label="LibreOffice Draw">
+			<action name="Execute">
+				<command>soffice -draw</command>
+			</action>
+		</item>
+		<item label="LibreOffice Impress">
+			<action name="Execute">
+				<command>soffice -impress</command>
+			</action>
+		</item>
+		<item label="LibreOffice Math">
+			<action name="Execute">
+				<command>soffice -math</command>
+			</action>
+		</item>
+		<item label="LibreOffice Writer">
+			<action name="Execute">
+				<command>soffice -writer</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="deadbeaf">
+			<action name="Execute">
+        <command>deadbeef 1>/dev/null 2>/dev/null</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Pidgin">
+			<action name="Execute">
+				<command>pidgin</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<!--		<item label="SMPlayer">
+			<action name="Execute">
+				<command>smplayer -minigui</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item> -->
+		<item label="KWPlayer">
+			<action name="Execute">
+        <command>kwplayer</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="VLC">
+			<action name="Execute">
+				<command>vlc-wrapper</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-fileman-menu" label="File Managers">
+		<item label="Calibre">
+			<action name="Execute">
+				<command>calibre</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Thunar">
+			<action name="Execute">
+				<command>thunar</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="gThumb">
+			<action name="Execute">
+				<command>gthumb</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="mendeley">
+			<action name="Execute">
+				<command>mendeleydesktop</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Jabref">
+			<action name="Execute">
+				<command>jabref</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="apps-graphics-menu" label="Graphics">
+		<item label="MyPaint">
+			<action name="Execute">
+				<command>mypaint</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Inkscape">
+			<action name="Execute">
+				<command>inkscape</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Gimp">
+			<action name="Execute">
+				<command>gimp</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="system-menu" label="System">
+		<item label="Openbox Configuration Manager">
+			<action name="Execute">
+				<command>obconf</command>
+				<startupnotify><enabled>yes</enabled></startupnotify>
+			</action>
+		</item>
+		<item label="Manage Cups Printers">
+			<action name="Execute">
+				<command>xdg-open http://localhost:631/</command>
+				<startupnotify>
+					<enabled>no</enabled>
+					<icon>cups</icon>
+				</startupnotify>
+			</action>
+		</item>
+		<separator />
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure" />
+		</item>
+	</menu>
+
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications" />
+		<menu id="apps-editors-menu"/>
+		<menu id="apps-development-menu"/>
+		<menu id="apps-graphics-menu"/>
+		<menu id="apps-net-menu"/>
+		<menu id="apps-office-menu"/>
+		<menu id="apps-multimedia-menu"/>
+		<menu id="apps-term-menu"/>
+		<menu id="apps-fileman-menu"/>
+		<separator label="System" />
+		<menu id="system-menu"/>
+		<separator />
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>yes</prompt>
+			</action>
+		</item>
+	</menu>
+
+</openbox_menu>
