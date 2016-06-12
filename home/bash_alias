@@ -1,0 +1,23 @@
+
+alias vi='vim'
+alias ls='ls --color=auto'
+alias youdao='youdao-dict'
+alias dict='ydcv'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias emacs='LC_CTYPE=zh_CN.UTF-8 emacs'
+alias l='ls'
+alias ll='ls -al'
+alias lls='ls'
+alias c='cd'
+alias gi='git'
+alias gta='git status -sb'
+alias gra='git branch'
+alias gdf='git diff'
+alias skype="apulse32 skype"
+
+alias sctl="sudo systemctl"
+alias sstart="sudo systemctl start"
+alias sstop="sudo systemctl stop"
+alias sstatus="sudo systemctl status"

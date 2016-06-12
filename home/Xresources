@@ -1,0 +1,62 @@
+! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
+!
+
+*VT100*utf8Title: true
+
+xterm*faceName:DejaVu Sans Mono:style=Book
+! xterm*faceName:Monospace:style=Book
+xterm*faceSize:14
+xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:Style=Regular
+! xterm*faceNameDoublesize:Monospace:Style=Regular
+XTerm*termName: xterm-256color
+Xterm*locale: true
+Xterm*utf8: true
+Xterm*utf8Title: true
+XTerm*metaSendsEscape: true
+Xterm*saveLines: 4096
+
+xterm*cjkWidth:false
+xterm*background:black
+xterm*foreground:white
+xterm*color0: #000000
+xterm*color1: #CC0000
+xterm*color2: #4E9A06
+xterm*color3: #C4A000
+xterm*color4: #3465A4
+xterm*color5: #75507B
+xterm*color6: #06989A
+xterm*color7: #D3D7CF
+xterm*color8: #555753
+xterm*color9: #EF2929
+xterm*color10: #8AE234
+xterm*color11: #FCE94F
+xterm*color12: #729FCF
+xterm*color13: #AD7FA8
+xterm*color14: #34E2E2
+xterm*color15: #EEEEEC
+
+xterm*selectToClipboard: on
+xterm*ScrollBar: on
+xterm*rightScrollBar: true
+xterm*scrollToBottomOnTryOutput: off
+
+! Set up scrollbars - get them, get them on the right side, and be
+! able to scroll them with the right,left, or middle mouse button
+! xterm*ScrollBar: on
+! *XTerm*scrollBar: true
+! xterm*rightScrollBar: true
+! xterm*multiScroll: on
+! xterm*jumpScroll: on
+!  
+! xterm*scrollbar.Translations: #override \n\
+!   :StartScroll(Continous) MoveThumb() NotifyThumb()\n\
+!   :MoveThumb() NotifyThumb() \n\
+!   :StartScroll(Continous) MoveThumb() NotifyThumb()\n\
+!   :MoveThumb() NotifyThumb() \n\
+!   :StartScroll(Continous) MoveThumb() NotifyThumb()\n\
+!   :MoveThumb() NotifyThumb() \n\
+!   :NotifyScroll(Proportional) EndScroll()
+!*VT100.colorBDMode:     true
+!*VT100.colorBD:         red
+!*VT100.colorULMode:     true
+!*VT100.colorUL:         cyan

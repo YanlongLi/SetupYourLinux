@@ -1,0 +1,4 @@
+! http://xahlee.info/linux/linux_xmodmap_tutorial.html 
+!
+clear Lock
+keycode 0x42 = Escape

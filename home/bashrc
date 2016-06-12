@@ -1,0 +1,51 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+if [ -f ${HOME}/.bash_alias ]; then
+  source ${HOME}/.bash_alias
+fi
+
+# PS1='[\u@\h \W]\$ '
+PS1='[lan@\h \W]\$ '
+
+# complete -cf sudo
+
+# PATH=$PATH:$HOME/.local/bin:~/.cabal/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.2.0/bin
+
+
+export EDITOR="vim"
+
+
+# export http_proxy=socks5://127.0.0.1:8081/
+# export https_proxy=$http_proxy
+# export HTTP_PROXY=$http_proxy
+# export HTTPS_PROXY=$http_proxy
+
+# export http_proxy=http://127.0.0.1:8087/
+# export https_proxy=$http_proxy
+# export HTTP_PROXY=$http_proxy
+# export HTTPS_PROXY=$HTTP_PROXY
+
+export JAVA_HOME="/usr/lib/jvm/default/"
+
+# for latex-suit alt macro
+# see detail
+# http://tex.stackexchange.com/questions/53692/m-i-mapping-not-working-in-vim-latexsuite-on-linux
+
+export PULSE_LATENCY_MSEC=60
+### fix banshee system tray icon
+# if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+#        eval "$(dbus-launch --sh-syntax --exit-with-session)"
+# fi 
+
+### automatic transparency for xterm
+# [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
+[ -n "$XTERM_VERSION" ] && transset-df -a 0.85 >/dev/null
+
+# bind 'set show-all-if-ambiguous on'
+# bind 'TAB:menu-complete'
