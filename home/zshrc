@@ -46,7 +46,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 # User configuration
 
@@ -83,19 +83,21 @@ export EDITOR='vim'
 
 # export PS1='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}[lan@%m %c ] %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
-export PS1='${ret_status}$(git_prompt_info)%{$reset_color%}[lans@LYL-PC %{$fg[cyan]%}%c%{$reset_color%}]$ '
+# export PS1='${ret_status}$(git_prompt_info)%{$reset_color%}[yanll@%m %{$fg[cyan]%}%c%{$reset_color%}]$ '
+export PS1='%{$fg[green]%}yanll@%m %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
+$ '
 
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.oh-my-zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
+# source ~/.oh-my-zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
 # Enable autosuggestions automatically.
-zle-line-init() {
-    zle autosuggest-start
-}
+# zle-line-init() {
+#     zle autosuggest-start
+# }
 
 zle -N zle-line-init
 
 
-[ -n "$XTERM_VERSION" ] && transset-df -a 0.85 >/dev/null
+# [ -n "$XTERM_VERSION" ] && transset-df -a 0.85 >/dev/null
 
 if [ -f ${HOME}/.bash_alias ]; then
   source ${HOME}/.bash_alias
