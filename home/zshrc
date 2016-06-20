@@ -46,7 +46,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 # User configuration
 
@@ -88,7 +88,7 @@ export PS1='%{$fg[green]%}yanll@%m %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_
 $ '
 
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/.oh-my-zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable autosuggestions automatically.
 # zle-line-init() {
 #     zle autosuggest-start
