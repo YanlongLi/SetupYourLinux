@@ -1,0 +1,9 @@
+#!/usr/bin/bash -x
+
+regex=$1
+
+git status | sed -n '/^$/,/^$/ s/\s\+modified:\s\+//p' | while read f; do
+  if [[ "$f" =~ $regex ]]; then
+    git add "$f"
+  fi
+done 
