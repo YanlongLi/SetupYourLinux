@@ -6,7 +6,8 @@ plugins=(zsh-users/zsh-autosuggestions zsh-users/zsh-syntax-highlighting)
 profiles=(zshrc zprofile)
 
 cur=`pwd`
-gitdir=${1-`realpath ./`}
+# gitdir=${1-`realpath ./`}
+gitdir="`dirname \"$0\"`"
 
 if [ ! -d $plugindir ]; then
   echo "$plugindir not exist, create it"

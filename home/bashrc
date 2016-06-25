@@ -9,8 +9,7 @@ if [ -f ${HOME}/.bash_alias ]; then
   source ${HOME}/.bash_alias
 fi
 
-# PS1='[\u@\h \W]\$ '
-PS1='[lan@\h \W]\$ '
+PS1='[\u@\h \W]\$ '
 
 # complete -cf sudo
 
