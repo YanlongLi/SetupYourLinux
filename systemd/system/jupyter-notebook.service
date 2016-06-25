@@ -1,0 +1,16 @@
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+PIDFile=/var/run/jupyter-notebook.pid
+; using command to generate default notebook config file
+; jupyter notebook --generate-config
+ExecStart=/usr/local/bin/jupyter notebook --config=<path/to/config/file.py>
+User=<user>
+Group=<group>
+WorkingDirectory=</path/to/working-directory/>
+; if NotebookDir is a relative path, it is relative to this path ? 
+
+[Install]
+WantedBy=multi-user.target
