@@ -19,6 +19,10 @@ PATH=$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.2.0/bin
 
 export EDITOR="vim"
 
+export GIT_EDIROR="vim"
+# export GIT_AUTHOR_NAME=
+# export GIT_AUTHOR_EMAIL=
+
 
 # export http_proxy=socks5://127.0.0.1:8081/
 # export https_proxy=$http_proxy
