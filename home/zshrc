@@ -84,7 +84,8 @@ export EDITOR='vim'
 # export PS1='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}[lan@%m %c ] %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # export PS1='${ret_status}$(git_prompt_info)%{$reset_color%}[yanll@%m %{$fg[cyan]%}%c%{$reset_color%}]$ '
-export PS1='%{$fg[green]%}yanll@%m %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
+# export PS1='%{$fg[green]%}%C@%m %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
+export PS1='%{$fg[green]%}%C@%m %{$fg[red]%}%D %t%{$reset_color%} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
 $ '
 
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
