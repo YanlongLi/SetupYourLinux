@@ -21,3 +21,5 @@ alias sctl="sudo systemctl"
 alias sstart="sudo systemctl start"
 alias sstop="sudo systemctl stop"
 alias sstatus="sudo systemctl status"
+
+alias tmux='tmux -u'
