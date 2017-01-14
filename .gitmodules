@@ -1,0 +1,3 @@
+[submodule "windows/consolas-powerline"]
+	path = windows/consolas-powerline
+	url = https://github.com/eugeii/consolas-powerline-vim.git
