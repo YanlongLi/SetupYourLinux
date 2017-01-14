@@ -1,0 +1,180 @@
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=$HOME/vimfiles/bundle/Vundle.vim
+" call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+call vundle#begin('$USERPROFILE/vimfiles/bundle')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
+Plugin 'alvan/vim-closetag'
+Plugin 'vim-scripts/bufkill.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/AuthorInfo'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
+" Plugin 'Shougo/neosnippet-snippets'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+" filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"""""""""""""""""""""""""""""""========================
+
+" =============================================================================
+"      FileName: base_config.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+set number
+set relativenumber
+set encoding=utf-8
+set nocompatible              " be iMproved, required
+filetype off                  " required
+filetype plugin indent on    " required
+"echo 'gui:' has("gui_running") 'term:' &t_Co+0
+set t_Co=256 
+set mouse=c       											        " no mouse to command line mode ====
+set hlsearch    											        " highlight for search 
+" set dictionary+='$USERPROFILE/.dictionary,$USERPROFILE/.mail_aliases'   " Dictionary
+" set backupdir='$USERPROFILE/vimfiles/backup,/tmp'                " set backup dir
+set tags+=./tags;/                              " Upward tag search
+set printoptions+=syntax:y                      " Use syntax hilighting when printing
+set grepprg=grep\ -nH\ $*                       " program used for :grep command
+set shellslash
+set autoindent
+set ts=2
+set sw=2
+set expandtab
+set showcmd
+set wildmenu
+set lazyredraw
+set foldmethod=indent
+set nofoldenable
+let mapleader=","
+syntax on
+filetype plugin on
+filetype indent on
+" disable errorbells
+set vb " visualbell
+highlight Search ctermbg=darkgrey
+
+
+autocmd BufNewFile,BufRead *.tsv set filetype=tsv
+
+autocmd FileType tsv setlocal noexpandtab
+autocmd FileType tsv setlocal listchars=tab:<-
+autocmd FileType tsv setlocal list
+
+vnoremap // y/<C-R>"<CR>
+
+autocmd FileType jade setlocal noexpandtab
+autocmd FileType coffee setlocal noexpandtab
+autocmd FileType vue setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab
+autocmd FileType python setlocal noexpandtab
+autocmd FileType python setlocal ts=2
+autocmd FileType cs setlocal ts=4
+autocmd FileType cs setlocal sw=4
+" =============================================================================
+"      FileName: status_line.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+" set statusline=%<%f\ %y[%{&ff}]%m%r%w%a\ %=%l/%L,%c%V\ %P
+" set laststatus=2  								              " Always show status bar
+" " file name completion with suffixes will be ignored
+" set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,CVS/,tags 
+" =============================================================================
+"      FileName: closetag.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:closetag_filenames = "*.html"
+" =============================================================================
+"      FileName: vim-table-mode.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:table_mode_corner = '+'           " Use this option to define the table corner character
+let g:table_mode_delimiter = ' '        " Use this option to define the delimiter which used by
+let g:table_mode_separator = '|'
+let g:table_mode_fillchar = '-'
+let g:table_mode_corner_corner = '+'
+let g:table_mode_align_char = ':'
+" =============================================================================
+"      FileName: YouCompleteMe.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:ycm_auto_trigger = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_echo_current_diagnostic=1
+let g:ycm_global_ycm_extra_conf = '$USERPROFILE/vimfiles/.ycm_extra_conf.py'
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "neosnippets", "mysnippets"]
+" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-n>'
+" =============================================================================
+"      FileName: nerdcommenter.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:NERDSpaceDelims = 1
+
+" =============================================================================
+"      FileName: YouCompleteMe.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:ycm_auto_trigger = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_echo_current_diagnostic=1
+
+"let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "neosnippets", "mysnippets"]
+" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" =============================================================================
+"      FileName: AuthorInfo.vim
+"          Desc: 
+"      HomePage: 
+" =============================================================================
+let g:vimrc_author='Yanlong Li'
+let g:vimrc_email='yanll@microsoft.com'
+" let g:vimrc_homepage='http://www.vimer.cn'
+
+nmap <F4> :AuthorInfoDetect<cr>
