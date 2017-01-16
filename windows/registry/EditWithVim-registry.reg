@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+; http://vim.wikia.com/wiki/Adding_Vim_to_MS-Windows_File_Explorer_Menu
+[HKEY_CLASSES_ROOT\*\Shell\Vim]
+@="Edit with &Vim"
+"Icon"="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\""
+
+
+[HKEY_CLASSES_ROOT\*\Shell\Vim\command]
+@="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\" \"%1\""
