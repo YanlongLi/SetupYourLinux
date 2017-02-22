@@ -103,3 +103,5 @@ zle -N zle-line-init
 if [ -f ${HOME}/.bash_alias ]; then
   source ${HOME}/.bash_alias
 fi
+
+[ -n "$XTERM_VERSION" ] && transset-df -a 0.85 >/dev/null
