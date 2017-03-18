@@ -1,0 +1,5 @@
+[plugininstall]
+description=Secure FTP plugin (over SSH connection) v1.4.2 - needs libssh2.dll, see readme.txt!
+type=wfx
+file=sftpplug.wfx
+defaultdir=sftpplug
