@@ -57,6 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
@@ -85,6 +86,7 @@ export EDITOR='vim'
 
 # export PS1='${ret_status}$(git_prompt_info)%{$reset_color%}[yanll@%m %{$fg[cyan]%}%c%{$reset_color%}]$ '
 # export PS1='%{$fg[green]%}%C@%m %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
+# export PS1='%{$fg[green]%}%n@%m %{$fg[red]%}%D %t%{$reset_color%} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
 export PS1='%{$fg[green]%}%C@%m %{$fg[red]%}%D %t%{$reset_color%} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%}
 $ '
 
@@ -104,4 +106,6 @@ if [ -f ${HOME}/.bash_alias ]; then
   source ${HOME}/.bash_alias
 fi
 
-[ -n "$XTERM_VERSION" ] && transset-df -a 0.85 >/dev/null
+[ -n "$XTERM_VERSION" ] && which transset-df >/dev/null 2>&1 && transset-df -a 0.85 >/dev/null
+
+which thefuck >/dev/null 2>&1 && eval $(thefuck --alias)

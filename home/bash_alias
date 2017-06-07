@@ -12,7 +12,7 @@ alias ll='ls -al'
 alias lls='ls'
 alias c='cd'
 alias gi='git'
-alias gta='git status -sb'
+alias gta='git status'
 alias gra='git branch'
 alias gdf='git diff'
 alias skype="apulse32 skype"
@@ -23,4 +23,4 @@ alias sstop="sudo systemctl stop"
 alias sstatus="sudo systemctl status"
 
 alias tmux='tmux -u'
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+# alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
