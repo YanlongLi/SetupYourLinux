@@ -108,4 +108,4 @@ fi
 
 [ -n "$XTERM_VERSION" ] && which transset-df >/dev/null 2>&1 && transset-df -a 0.85 >/dev/null
 
-which thefuck >/dev/null 2>&1 && eval $(thefuck --alias)
+which thefuck >/dev/null 2>&1 && eval $(thefuck --alias) && alias cao='fuck'
