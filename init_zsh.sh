@@ -28,7 +28,7 @@ for fname in ${profiles[@]}; do
   if [ -f ~/zshrc ]; then
     mv -f ~/.zshrc ~/.zshrc.back
   fi
-  cp -f $gitdir/home/$fname ~/.$fname
+  cp -f $gitdir/zsh/$fname ~/.$fname
 done
 echo "use command below to change your default shell:"
 echo "sudo chsh -s $(which zsh) \$USER"

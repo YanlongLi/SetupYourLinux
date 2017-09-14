@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+user=$USER
+domain=fareast
+shared=$1
+mountpoint=$2
+uid=`id -u`
+gid=`id -g`
+
+case $1 in
+  -u )
+    sudo umount "$2"
+    ;;
+  * )
+    read -s -p "Enter Password for $user: " pass
+    sudo mount -t cifs -o user=$user,password=$pass,domain=$domain,uid=$uid,gid=$gid,vers=2.0,sec=ntlmssp $shared $mountpoint
+    ;;
+esac
+
+# smbclient -m SMB3 -U <domain>\\<alias> <networkpath>
+# smbclient -m SMB3 -U <alias> -W fareast <networkpath>
