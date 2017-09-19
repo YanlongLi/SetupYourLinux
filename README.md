@@ -1,5 +1,9 @@
 # Set Up Your Linux
 
+## System Initialize
+### User and Group Management
+_TODO_
+
 ## Scripts
 
 - [mountwinshare](./scripts/bin/mountwinshare)  (required pacakage: `cifs-utils`)
@@ -25,6 +29,9 @@ $> mountwinshare //<host>/<shared>/<path> /<mount>/<point>
 | clang        | llvm          | libboost-all-dev  |             |
 | mono-xbuild  | mono-dmcs     |                   |             |
 | cmake        |               |                   |             |
+
+Other usefull tools:
+- [the_silver_searcher](https://github.com/ggreer/the_silver_searcher): `sudo apt-get install silversearcher-ag`
 
 
 ### Python packages
