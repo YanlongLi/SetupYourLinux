@@ -36,6 +36,9 @@ export GIT_EDIROR="vim"
 
 export JAVA_HOME="/usr/lib/jvm/default/"
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 # for latex-suit alt macro
 # see detail
 # http://tex.stackexchange.com/questions/53692/m-i-mapping-not-working-in-vim-latexsuite-on-linux
