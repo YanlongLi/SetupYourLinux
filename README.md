@@ -52,6 +52,8 @@ Other usefull tools:
 | ------------ | -------- | ---- | ------- |
 | tidy         | astyle   | htop | thefuck |
 
+### ydcv
+command line dict: [ydcv](https://github.com/felixonmars/ydcv)
 
 ## Configurations
 
