@@ -2,9 +2,6 @@
   editor = vim
 [log]
   date = local
-[user]
-  name = Yanlong Li
-  email = lansunlong@gmail.com
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
