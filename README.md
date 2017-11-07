@@ -111,6 +111,12 @@ $> pip2 install python2-matplotlib
 $> pip2 install python2-scipy
 ```
 
+[multi kernel support](http://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+```
+python3 -m pip install ipykernel
+python3 -m ipykernel install --user
+```
+
 - [Managing IPython notebook server via systemd: Part-I](https://amitksaha.wordpress.com/2013/09/22/managing-ipython-notebook-server-via-systemd-part-i/)
     - `man systemd.unit`
     - example config file [jupyter-notebook.service](systemd/system/jupyter-notebook.service)
