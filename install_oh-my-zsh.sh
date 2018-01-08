@@ -33,7 +33,7 @@ main() {
   fi
   unset CHECK_ZSH_INSTALLED
 
-  ZSH=/usr/share/oh-my-zsh
+  ZSH=$HOME/.oh-my-zsh
 
   if [ -d "$ZSH" ]; then
     printf "${YELLOW}You already have Oh My Zsh installed.${NORMAL}\n"
