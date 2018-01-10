@@ -1,6 +1,21 @@
 
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*) machine=Linux;;
+    Darwin*) machine=Mac;;
+    CYGWIN*) machine=Cygwin;;
+    MINGW*) machine=MinGw;;
+    *) machine="UNKNOWN:${unameOut}"
+esac
+
 alias vi='vim'
-alias ls='ls --color=auto'
+
+if [ $machine = "Darwin" ]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color=auto'
+fi
+
 alias youdao='youdao-dict'
 alias dict='ydcv'
 alias rm='rm -i'
