@@ -55,3 +55,5 @@ export PULSE_LATENCY_MSEC=60
 
 # bind 'set show-all-if-ambiguous on'
 # bind 'TAB:menu-complete'
+
+stty -ixon -ixoff
