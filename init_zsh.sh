@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 plugindir=~/.oh-my-zsh/plugins
 baseuri=https://github.com
 plugins=(zsh-users/zsh-autosuggestions zsh-users/zsh-syntax-highlighting)
